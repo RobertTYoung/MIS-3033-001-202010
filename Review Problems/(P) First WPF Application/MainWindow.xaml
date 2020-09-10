@@ -19,7 +19,7 @@
         <TextBox x:Name="txt_DoB" HorizontalAlignment="Left" Margin="179,327,0,0" Text="ex, 12/31/2000" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnCalculateAge" Content="Click me to learn something you wish you didn't know." HorizontalAlignment="Left" Margin="382,205,0,0" VerticalAlignment="Top" Width="344" Height="66" MouseEnter="Button_MouseEnter" Click="btnCalculateAge_Click"/>
         <DatePicker x:Name="DatePickerDOB" HorizontalAlignment="Left" Margin="179,251,0,0" VerticalAlignment="Top" Width="160"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="501,116,0,0" VerticalAlignment="Top" Width="225" Height="63" MouseEnter="Button_MouseEnter"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="501,116,0,0" VerticalAlignment="Top" Width="225" Height="63" MouseEnter="Button_MouseEnter" IsEnabled="False"/>
 
     </Grid>
 </Window>

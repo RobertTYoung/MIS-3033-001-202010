@@ -32,13 +32,13 @@ namespace _P__First_WPF_Application
 
             var Age = Today.Year - Birthday.Year;
 
-            string message = $"Hello {txt_Name}, you are {Age} years old.";
+            string message = $"Hello {txt_Name.Text}, you are {Age} years old.";
             MessageBox.Show(message);
         }
 
         private void Button_MouseEnter(object sender, MouseEventArgs e)
         {
-            btnCalculateAge.Background = Color.Red;
+            btnCalculateAge.Background = Brushes.Red;
         }
     }
 }

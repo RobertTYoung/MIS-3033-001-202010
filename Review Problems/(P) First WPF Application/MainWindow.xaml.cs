@@ -23,6 +23,19 @@ namespace _P__First_WPF_Application
         public MainWindow()
         {
             InitializeComponent();
+        }        
+
+        private void btnCalculateAge_Click(object sender, RoutedEventArgs e)
+        {
+            DateTime Today = DateTime.Now;
+            DateTime Birthday = Convert.ToDateTime(DatePickerDOB.SelectedDate);
+
+            var Age = Today.Year - Birthday.Year;  
+        }
+
+        private void Button_MouseEnter(object sender, MouseEventArgs e)
+        {
+            btnCalculateAge.Background = Color.Red;
         }
     }
 }

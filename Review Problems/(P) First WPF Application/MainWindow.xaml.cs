@@ -30,7 +30,10 @@ namespace _P__First_WPF_Application
             DateTime Today = DateTime.Now;
             DateTime Birthday = Convert.ToDateTime(DatePickerDOB.SelectedDate);
 
-            var Age = Today.Year - Birthday.Year;  
+            var Age = Today.Year - Birthday.Year;
+
+            string message = $"Hello {txt_Name}, you are {Age} years old.";
+            MessageBox.Show(message);
         }
 
         private void Button_MouseEnter(object sender, MouseEventArgs e)

@@ -32,7 +32,7 @@ namespace CSV_Example
 
         private void btnValidate_Click(object sender, RoutedEventArgs e)
         {
-            string filePath = txtFilePath.Text;
+            filePath = txtFilePath.Text;
 
             if (File.Exists(filePath) == true)
             {
@@ -72,7 +72,7 @@ namespace CSV_Example
                 
                 lstFile.Items.Add(pieces[1]);
             }
-            MessageBox.Show($"The sum of all the product prices is {sum.ToString("RC2")}");
+            MessageBox.Show($"The sum of all the product prices is {sum.ToString("C2")}");
 
             //foreach (var line in lines )
             //{

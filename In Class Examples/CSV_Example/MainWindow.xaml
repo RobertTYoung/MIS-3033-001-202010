@@ -8,8 +8,8 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Button x:Name="btnValidate" Content="Validate" HorizontalAlignment="Left" Margin="514,94,0,0" VerticalAlignment="Top" Width="75" Click="btnValidate_Click"/>
-        <Label Content="Please enter the file path:" HorizontalAlignment="Left" Margin="33,88,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtFilePath" HorizontalAlignment="Left" Height="19" Margin="192,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="222"/>
+        <Label Content="Please enter the file path:" HorizontalAlignment="Left" Margin="10,88,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtFilePath" HorizontalAlignment="Left" Height="19" Margin="159,94,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="334"/>
         <Button x:Name="btnProcess" Content="Process File" HorizontalAlignment="Left" Margin="33,164,0,0" VerticalAlignment="Top" Width="184" Height="89" IsEnabled="False" Click="btnProcess_Click"/>
         <ListBox x:Name="lstFile" HorizontalAlignment="Left" Height="138" Margin="10,272,0,0" VerticalAlignment="Top" Width="774"/>
 

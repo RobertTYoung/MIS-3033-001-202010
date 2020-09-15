@@ -66,7 +66,7 @@ namespace CSV_Example
                     sum += Convert.ToDouble(pieces[2]);
                 }
                 else
-                {
+                {     
                     MessageBox.Show($"Sorry, the was an invalid Price {pieces[2]} on line {i + 1}.");
                 }
                 

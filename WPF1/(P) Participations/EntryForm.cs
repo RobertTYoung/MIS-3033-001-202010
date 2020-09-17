@@ -12,13 +12,18 @@ namespace _P__Participations
         public string Address { get; set; }
         public int ZipCode { get; set; }
 
-        public EntryForm;
+        public EntryForm()
+        {
+            Name = string.Empty;
+            Address = string.Empty;
+            ZipCode = 0;
+        }
         
         public EntryForm(string name, string address, int zipCode)
         {
-            name = Name;
-            address = Address;
-            zipCode = ZipCode;
+            Name = name;
+            Address = address;
+            ZipCode = zipCode;
         }
         override public string ToString()
         {

@@ -24,5 +24,18 @@ namespace _P__Participations
         {
             InitializeComponent();
         }
+
+        private void btnExecute_Click(object sender, RoutedEventArgs e)
+        {
+            lstbxEntryInfo.Items.Add($"{txtName.Text}, {txtAddress1.Text}, {txtZipCode.Text}");
+            //    lstbxEntryInfo.Items.Add(txtAddress);
+            //    lstbxEntryInfo.Items.Add(txtZipCode);
+
+            txtName.Text = string.Empty;
+            txtAddress1.Text = string.Empty;
+            txtZipCode.Text = string.Empty;
+
+
+        }
     }
 }

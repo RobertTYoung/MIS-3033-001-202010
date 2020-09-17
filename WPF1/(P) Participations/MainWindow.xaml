@@ -13,13 +13,14 @@
                 <GradientStop Color="#FFC32323" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Label Content="Enter your name here:" HorizontalAlignment="Left" Margin="137,72,0,0" VerticalAlignment="Top" Width="132"/>
-        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="23" Margin="315,67,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Enter your address here:" HorizontalAlignment="Left" Margin="137,147,0,0" VerticalAlignment="Top" Width="149"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="315,150,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Enter your zipcode here:" HorizontalAlignment="Left" Margin="137,220,0,0" VerticalAlignment="Top" Width="149"/>
-        <TextBox x:Name="txtZipCode" HorizontalAlignment="Left" Height="23" Margin="315,224,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnExecute" Content="Execute" HorizontalAlignment="Left" Margin="204,305,0,0" VerticalAlignment="Top" Width="248" Height="61"/>
+        <Label Content="Enter your name here:" HorizontalAlignment="Left" Margin="58,42,0,0" VerticalAlignment="Top" Width="132"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="23" Margin="236,37,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Enter your address here:" HorizontalAlignment="Left" Margin="58,117,0,0" VerticalAlignment="Top" Width="149"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="236,120,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Enter your zipcode here:" HorizontalAlignment="Left" Margin="58,190,0,0" VerticalAlignment="Top" Width="149"/>
+        <TextBox x:Name="txtZipCode" HorizontalAlignment="Left" Height="23" Margin="236,194,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnExecute" Content="Execute" HorizontalAlignment="Left" Margin="493,115,0,0" VerticalAlignment="Top" Width="248" Height="61"/>
+        <ListBox x:Name="lstbxEntryInfo" HorizontalAlignment="Left" Height="150" Margin="45,245,0,0" VerticalAlignment="Top" Width="696"/>
 
 
     </Grid>

@@ -27,9 +27,14 @@ namespace _P__Participations
 
         private void btnExecute_Click(object sender, RoutedEventArgs e)
         {
-            lstbxEntryInfo.Items.Add($"{txtName.Text}, {txtAddress1.Text}, {txtZipCode.Text}");
+            EntryForm MyEntryForm = new EntryForm(txtName.Text, txtAddress1.Text, Convert.ToInt32(txtZipCode.Text));
+            lstbxEntryInfo.Items.Add(MyEntryForm);
+            
+            //lstbxEntryInfo.Items.Add(EntryForm);
+            //EntryForm(txtName.Text, txtAddress1.Text, txtZipCode.Text);
+
             //    lstbxEntryInfo.Items.Add(txtAddress);
-            //    lstbxEntryInfo.Items.Add(txtZipCode);
+            //    lstbxEntryInfo.Items.Add(txtZipCode);            
 
             txtName.Text = string.Empty;
             txtAddress1.Text = string.Empty;

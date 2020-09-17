@@ -19,7 +19,7 @@
         <TextBox x:Name="txtAddress1" HorizontalAlignment="Left" Height="23" Margin="236,117,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label Content="Enter your zipcode here:" HorizontalAlignment="Left" Margin="58,190,0,0" VerticalAlignment="Top" Width="149"/>
         <TextBox x:Name="txtZipCode" HorizontalAlignment="Left" Height="23" Margin="236,190,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnExecute" Content="Execute" HorizontalAlignment="Left" Margin="493,115,0,0" VerticalAlignment="Top" Width="248" Height="61" Click="btnExecute_Click"/>
+        <Button x:Name="btnExecute" Content="Execute" HorizontalAlignment="Left" Margin="456,99,0,0" VerticalAlignment="Top" Width="248" Height="61" Click="btnExecute_Click"/>
         <ListBox x:Name="lstbxEntryInfo" HorizontalAlignment="Left" Height="150" Margin="45,245,0,0" VerticalAlignment="Top" Width="696"/>
 
 

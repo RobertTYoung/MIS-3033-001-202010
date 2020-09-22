@@ -23,6 +23,22 @@ namespace _P__WPF___Classes_2
         public MainWindow()
         {
             InitializeComponent();
+            if (txtManufacturer.Text != string.Empty && txtName.Text != string.Empty)
+            {
+                btnAddToListBox.IsEnabled = true;
+            }
+        }
+
+        private void lstToys_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            Toy selectedToy = (Toy)lstToys.SelectedItem;
+        }
+
+        private void btnAddToListBox_Click(object sender, RoutedEventArgs e)
+        {
+            new Toy = Toy();
+            lstToys.Items.Add(Toy);
+
         }
     }
 }

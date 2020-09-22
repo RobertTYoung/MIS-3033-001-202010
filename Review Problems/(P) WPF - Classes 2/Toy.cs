@@ -27,6 +27,10 @@ namespace _P__WPF___Classes_2
             string Aisle = M + P;
             return Aisle;
         }
+        public override string ToString()
+        {
+            return base.ToString();
+        }
 
     }
 }

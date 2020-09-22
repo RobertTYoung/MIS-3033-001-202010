@@ -19,7 +19,8 @@ namespace _P__WPF___Classes_2
         }
         string GetAisle()
         {
-            string M = Manufacturer - Manufacturer.Length;
+            
+            string M = Convert.ToString(Manufacturer[0]); // stack overflow site for getting first letter
 
             string StringPrice = Convert.ToString(Price);
             string P = StringPrice.Trim(new Char[] { ',', '$', '.' });  //Looked at microsoft trim and removing characters page

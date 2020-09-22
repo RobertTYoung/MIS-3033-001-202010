@@ -13,7 +13,7 @@ namespace _P__WPF___Classes_2
         public double Price { get; set; }
         private string Aisle { get; set; }
 
-        Toy ()
+        public Toy ()
         {
 
         }
@@ -29,7 +29,7 @@ namespace _P__WPF___Classes_2
         }
         public override string ToString()
         {
-            return base.ToString();
+            return $"{Manufacturer} - {Name}";
         }
 
     }

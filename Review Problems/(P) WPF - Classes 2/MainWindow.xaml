@@ -22,7 +22,7 @@
         <Label Content="Price" HorizontalAlignment="Left" Height="28" Margin="45,182,0,0" VerticalAlignment="Top" Width="91"/>
         <TextBox x:Name="txtPrice" HorizontalAlignment="Left" Height="28" Margin="141,182,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="135" RenderTransformOrigin="-0.101,0.818"/>
         <ListBox x:Name="lstToys" HorizontalAlignment="Left" Height="137" Margin="45,260,0,0" VerticalAlignment="Top" Width="460" MouseDoubleClick="lstToys_MouseDoubleClick"/>
-        <Button x:Name="btnAddToListBox" Content="Add To List" HorizontalAlignment="Left" Height="106" Margin="449,87,0,0" VerticalAlignment="Top" Width="254" IsEnabled="False" Click="btnAddToListBox_Click"/>
+        <Button x:Name="btnAddToListBox" Content="Add To List" HorizontalAlignment="Left" Height="106" Margin="449,87,0,0" VerticalAlignment="Top" Width="254" Click="btnAddToListBox_Click" IsDefault="True"/>
 
     </Grid>
 </Window>

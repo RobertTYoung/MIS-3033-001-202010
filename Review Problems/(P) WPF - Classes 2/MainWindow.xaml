@@ -7,6 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFC71515" Offset="0"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Image HorizontalAlignment="Left" Height="106" Margin="580,273,0,0" VerticalAlignment="Top" Width="186" Source="https://www.chicagotribune.com/resizer/Qs0OQhmF8z8pS1AK5qoX11kto78=/1200x0/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/G7N6L3HQIBEX7PH43X5DQVNKAI.jpg"/>
+        <Label Content="Manufacturer" HorizontalAlignment="Left" Height="28" Margin="45,59,0,0" VerticalAlignment="Top" Width="91"/>
+        <TextBox x:Name="txtManufacturer" HorizontalAlignment="Left" Height="28" Margin="141,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="135"/>
+        <Label Content="Name" HorizontalAlignment="Left" Height="28" Margin="45,123,0,0" VerticalAlignment="Top" Width="91"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="28" Margin="141,123,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="135"/>
+        <Label Content="Price" HorizontalAlignment="Left" Height="28" Margin="45,182,0,0" VerticalAlignment="Top" Width="91"/>
+        <TextBox x:Name="txtPrice" HorizontalAlignment="Left" Height="28" Margin="141,182,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="135" RenderTransformOrigin="-0.101,0.818"/>
+        <ListBox x:Name="lstToys" HorizontalAlignment="Left" Height="137" Margin="45,260,0,0" VerticalAlignment="Top" Width="460"/>
+        <Button x:Name="btnAddToListBox" Content="Add To List" HorizontalAlignment="Left" Height="106" Margin="449,87,0,0" VerticalAlignment="Top" Width="254"/>
+
     </Grid>
 </Window>

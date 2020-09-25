@@ -15,7 +15,7 @@ namespace _P__WPF___Classes_2
 
         public Toy ()
         {
-
+            
         }
         string GetAisle()
         {
@@ -29,7 +29,9 @@ namespace _P__WPF___Classes_2
         }
         public override string ToString()
         {
-            return $"{Manufacturer} - {Name}";
+            string Man = Manufacturer;
+            string Nam = Name;
+            return $"{Man} - {Nam}";
         }
 
     }

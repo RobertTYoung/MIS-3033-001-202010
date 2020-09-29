@@ -15,7 +15,11 @@
         </Grid.Background>
         <Label Content="POKEMON" HorizontalAlignment="Left" Height="56" Margin="270,23,0,0" VerticalAlignment="Top" Width="228" FontSize="48" FontFamily="Algerian"/>
         <ComboBox x:Name="cboPokemon" HorizontalAlignment="Left" Margin="47,174,0,0" VerticalAlignment="Top" Width="193" Height="33" SelectionChanged="cboPokemon_SelectionChanged"/>
-        <Image x:Name="imagePokemon" HorizontalAlignment="Left" Height="158" Margin="463,174,0,0" VerticalAlignment="Top" Width="267"/>
+        <Image x:Name="imagePokemon" HorizontalAlignment="Left" Height="158" Margin="452,235,0,0" VerticalAlignment="Top" Width="267"/>
+        <Label Content="Weight" HorizontalAlignment="Left" Margin="409,113,0,0" VerticalAlignment="Top" Width="89"/>
+        <TextBox x:Name="txtWeight" HorizontalAlignment="Left" Height="26" Margin="563,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="97"/>
+        <Label Content="Height" HorizontalAlignment="Left" Margin="409,160,0,0" VerticalAlignment="Top" Width="89"/>
+        <TextBox x:Name="txtHeight" HorizontalAlignment="Left" Height="26" Margin="563,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="97"/>
 
     </Grid>
 </Window>

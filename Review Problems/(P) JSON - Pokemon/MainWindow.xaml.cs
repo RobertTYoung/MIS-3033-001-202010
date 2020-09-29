@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -25,16 +26,26 @@ namespace _P__JSON___Pokemon
         {
             InitializeComponent();
 
-            string url = @"https://pokeapi.co/api/v2/pokemon?offset=0&limit=1150";
-            PokemonNameAPI Nameapi;
+            //string url = @"https://pokeapi.co/api/v2/pokemon?offset=0&limit=1150";
+            //PokemonNameAPI Nameapi;
+            //using (var client = new HttpClient())
+            //{
+            //    string results = client.GetStringAsync(url).Result;
+
+            //    Nameapi = JsonConvert.DeserializedObject<PokemonNameAPI>(results);
+            //}
+
+            PokemonNameAPI Pokemonapi;
             using (var client = new HttpClient())
             {
-                string results = client.GetStringAsync(url).Result;
+                string AllPokemonURL = @"https://pokeapi.co/api/v2/pokemon?offset=0&limit=1100";
 
-                Nameapi = JsonConvert.DeserializedObject<PokemonNameAPI>(results);
+                string json = client.GetStringAsync(AllPokemonURL).Result;
+
+                Pokemonapi = JsonConvert.DeserializeObject<PokemonNameAPI>(json);
             }
 
-            foreach (var pokemon in Nameapi.results)
+            foreach (var pokemon in Pokemonapi.results)
             {
                 cboPokemon.Items.Add(pokemon);
             }

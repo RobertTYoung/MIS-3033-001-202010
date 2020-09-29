@@ -8,7 +8,6 @@ namespace _P__JSON___Pokemon
 {
     class PokemonNameAPI
     {
-        //public Info info { get; set; }
         public List<Pokemon> results{ get; set; }
     }
     public class Pokemon
@@ -21,8 +20,4 @@ namespace _P__JSON___Pokemon
             return name;
         }
     }
-    //public class Info
-    //{ 
-    
-    //}
 }

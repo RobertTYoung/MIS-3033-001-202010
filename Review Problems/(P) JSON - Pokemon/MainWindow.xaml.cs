@@ -53,7 +53,15 @@ namespace _P__JSON___Pokemon
 
         private void cboPokemon_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            PokemonStatsAPI PokemonSapi;
+            using (var client = new HttpClient())
+            {
+                string AllPokemonURL = @"https://pokeapi.co/api/v2/pokemon";
 
+                string json = client.GetStringAsync(AllPokemonURL).Result;
+
+                PokemonSapi = JsonConvert.DeserializeObject<PokemonStatsAPI>(json);
+            }
         }
     }
 }

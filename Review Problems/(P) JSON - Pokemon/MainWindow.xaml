@@ -1,0 +1,21 @@
+﻿<Window x:Class="_P__JSON___Pokemon.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_P__JSON___Pokemon"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF1305F6" Offset="0"/>
+                <GradientStop Color="White" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="POKEMON" HorizontalAlignment="Left" Height="56" Margin="270,23,0,0" VerticalAlignment="Top" Width="228" FontSize="48" FontFamily="Algerian"/>
+        <ComboBox x:Name="cboPokemon" HorizontalAlignment="Left" Margin="47,174,0,0" VerticalAlignment="Top" Width="193" Height="33" SelectionChanged="cboPokemon_SelectionChanged"/>
+        <Image x:Name="imagePokemon" HorizontalAlignment="Left" Height="158" Margin="463,174,0,0" VerticalAlignment="Top" Width="267"/>
+
+    </Grid>
+</Window>

@@ -29,7 +29,7 @@ namespace _P__WPF___Classes_2
         private void lstToys_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             Toy selectedToy = (Toy)lstToys.SelectedItem;
-            MessageBox.Show($"{GetAisle(selectedToy)}");
+            //MessageBox.Show($"{GetAisle(selectedToy)}");
         }
 
         private void btnAddToListBox_Click(object sender, RoutedEventArgs e)

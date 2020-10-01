@@ -75,9 +75,66 @@ namespace _P__JSON___Pokemon
 
             imagePokemon.Source = picture;
 
-            txtHeight.Text = Convert.ToString(PokemonSapi.Height);
-            txtWeight.Text = Convert.ToString(PokemonSapi.Weight);
+            txtHeight.Text = $"{Convert.ToString(PokemonSapi.Height)} Feet";
+            txtWeight.Text = $"{Convert.ToString(PokemonSapi.Weight)} Pounds";
             //lblPokemonName.Content = $"{PokemonNameAPI.results.name}";
+        }
+
+        private void txtChangeView_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (txtChangeView.IsEnabled == true)
+            {
+                Pokemon SelectedPokemon = (Pokemon)cboPokemon.SelectedItem;
+
+                using (var client = new HttpClient())
+                {
+                    string SelectedPokemonURL = SelectedPokemon.url; ;
+
+                    string json = client.GetStringAsync(SelectedPokemonURL).Result;
+
+                    PokemonSapi = JsonConvert.DeserializeObject<PokemonStatsAPI>(json);
+                }
+
+                Uri uri = new Uri(PokemonSapi.sprites.back_default);
+                BitmapImage picture = new BitmapImage(uri);
+
+                imagePokemon.Source = picture;
+            }
+            else
+            {
+                Pokemon SelectedPokemon = (Pokemon)cboPokemon.SelectedItem;
+
+                using (var client = new HttpClient())
+                {
+                    string SelectedPokemonURL = SelectedPokemon.url; ;
+
+                    string json = client.GetStringAsync(SelectedPokemonURL).Result;
+
+                    PokemonSapi = JsonConvert.DeserializeObject<PokemonStatsAPI>(json);
+                }
+
+                Uri uri = new Uri(PokemonSapi.sprites.front_default);
+                BitmapImage picture = new BitmapImage(uri);
+
+                imagePokemon.Source = picture;
+            }
+
+            //Pokemon SelectedPokemon = (Pokemon)cboPokemon.SelectedItem;
+
+            //using (var client = new HttpClient())
+            //{
+            //    string SelectedPokemonURL = SelectedPokemon.url; ;
+
+            //    string json = client.GetStringAsync(SelectedPokemonURL).Result;
+
+            //    PokemonSapi = JsonConvert.DeserializeObject<PokemonStatsAPI>(json);
+            //}
+
+            //Uri uri = new Uri(PokemonSapi.sprites.back_default);
+            //BitmapImage picture = new BitmapImage(uri);
+
+            //imagePokemon.Source = picture;
         }
     }
 }

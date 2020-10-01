@@ -14,13 +14,14 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Label Content="POKEMON" HorizontalAlignment="Left" Height="56" Margin="270,23,0,0" VerticalAlignment="Top" Width="228" FontSize="48" FontFamily="Algerian"/>
-        <ComboBox x:Name="cboPokemon" HorizontalAlignment="Left" Margin="47,174,0,0" VerticalAlignment="Top" Width="193" Height="33" SelectionChanged="cboPokemon_SelectionChanged"/>
-        <Image x:Name="imagePokemon" HorizontalAlignment="Left" Height="158" Margin="471,116,0,0" VerticalAlignment="Top" Width="267"/>
-        <Label Content="Weight" HorizontalAlignment="Left" Margin="487,297,0,0" VerticalAlignment="Top" Width="89"/>
-        <TextBox x:Name="txtWeight" HorizontalAlignment="Left" Height="26" Margin="641,297,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="97"/>
-        <Label Content="Height" HorizontalAlignment="Left" Margin="487,344,0,0" VerticalAlignment="Top" Width="89"/>
-        <TextBox x:Name="txtHeight" HorizontalAlignment="Left" Height="26" Margin="641,344,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="97"/>
+        <ComboBox x:Name="cboPokemon" HorizontalAlignment="Left" Margin="12,89,0,0" VerticalAlignment="Top" Width="193" Height="33" SelectionChanged="cboPokemon_SelectionChanged"/>
+        <Image x:Name="imagePokemon" HorizontalAlignment="Left" Height="267" Margin="426,114,0,0" VerticalAlignment="Top" Width="328"/>
+        <Label Content="Weight" HorizontalAlignment="Left" Margin="176,308,0,0" VerticalAlignment="Top" Width="89"/>
+        <TextBox x:Name="txtWeight" HorizontalAlignment="Left" Height="26" Margin="270,308,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="97"/>
+        <Label Content="Height" HorizontalAlignment="Left" Margin="176,355,0,0" VerticalAlignment="Top" Width="89"/>
+        <TextBox x:Name="txtHeight" HorizontalAlignment="Left" Height="26" Margin="270,355,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="97"/>
         <Label x:Name="lblPokemonName" Content="" HorizontalAlignment="Left" Height="37" Margin="576,42,0,0" VerticalAlignment="Top" Width="162"/>
+        <Button x:Name="txtChangeView" Content="Change View Point" HorizontalAlignment="Left" Height="61" Margin="237,168,0,0" VerticalAlignment="Top" Width="167" Click="txtChangeView_Click"/>
 
     </Grid>
 </Window>

@@ -100,6 +100,8 @@ namespace _P__JSON___Pokemon
                 BitmapImage picture = new BitmapImage(uri);
 
                 imagePokemon.Source = picture;
+
+                txtChangeView.IsEnabled = false;
             }
             else
             {
@@ -118,6 +120,8 @@ namespace _P__JSON___Pokemon
                 BitmapImage picture = new BitmapImage(uri);
 
                 imagePokemon.Source = picture;
+
+                txtChangeView.IsEnabled = true;
             }
 
             //Pokemon SelectedPokemon = (Pokemon)cboPokemon.SelectedItem;

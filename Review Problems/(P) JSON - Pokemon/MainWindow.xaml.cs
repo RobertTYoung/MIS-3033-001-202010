@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -22,6 +23,7 @@ namespace _P__JSON___Pokemon
     /// </summary>
     public partial class MainWindow : Window
     {
+        PokemonNameAPI Pokemonapi;
         public MainWindow()
         {
             InitializeComponent();
@@ -35,7 +37,7 @@ namespace _P__JSON___Pokemon
             //    Nameapi = JsonConvert.DeserializedObject<PokemonNameAPI>(results);
             //}
 
-            PokemonNameAPI Pokemonapi;
+            //PokemonNameAPI Pokemonapi;
             using (var client = new HttpClient())
             {
                 string AllPokemonURL = @"https://pokeapi.co/api/v2/pokemon?offset=0&limit=1100";
@@ -50,18 +52,32 @@ namespace _P__JSON___Pokemon
                 cboPokemon.Items.Add(pokemon);
             }
         }
-
+        PokemonStatsAPI PokemonSapi;
         private void cboPokemon_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            PokemonStatsAPI PokemonSapi;
+            Pokemon SelectedPokemon = (Pokemon)cboPokemon.SelectedItem;
+            
+
+            //PokemonStatsAPI PokemonSapi;
             using (var client = new HttpClient())
             {
-                string AllPokemonURL = @"https://pokeapi.co/api/v2/pokemon";
+                string SelectedPokemonURL = SelectedPokemon.url; ;
 
-                string json = client.GetStringAsync(AllPokemonURL).Result;
+                string json = client.GetStringAsync(SelectedPokemonURL).Result;
 
                 PokemonSapi = JsonConvert.DeserializeObject<PokemonStatsAPI>(json);
             }
+
+            //PokemonStatsAPI selectedCharacter = (PokemonStatsAPI)cboPokemon.SelectedItem;
+
+            Uri uri = new Uri(PokemonSapi.sprites.front_default);
+            BitmapImage picture = new BitmapImage(uri);
+
+            imagePokemon.Source = picture;
+
+            txtHeight.Text = Convert.ToString(PokemonSapi.Height);
+            txtWeight.Text = Convert.ToString(PokemonSapi.Weight);
+            //lblPokemonName.Content = $"{PokemonNameAPI.results.name}";
         }
     }
 }

@@ -17,7 +17,7 @@ namespace _P__JSON___Pokemon
 
         public override string ToString()
         {
-            return name;
+            return name[0].ToString().ToUpper() + name.Substring(1,name.Length-1);
         }
     }
 }

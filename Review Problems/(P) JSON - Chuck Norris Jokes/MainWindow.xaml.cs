@@ -27,7 +27,7 @@ namespace _P__JSON___Chuck_Norris_Jokes
             InitializeComponent();
 
             string url = @"https://api.chucknorris.io/jokes/categories";
-            ChuckNorrisAPI api;
+            //ChuckNorrisAPI api;
             using (var client = new HttpClient())
             {
                 //string results = client.GetStringAsync(url).Result;
@@ -37,6 +37,8 @@ namespace _P__JSON___Chuck_Norris_Jokes
                 string jsonResults = client.GetStringAsync(url).Result;
 
                 string[] cats = JsonConvert.DeserializeObject<String[]>(jsonResults);
+
+                cboCategory.Items.Add("All");
 
                 foreach (var category in cats)
                 {
@@ -57,6 +59,23 @@ namespace _P__JSON___Chuck_Norris_Jokes
 
         private void btnGetQuote_Click(object sender, RoutedEventArgs e)
         {
+            if (cboCategory.SelectedItem.ToString() == "All")
+            {
+                string url = @"https://api.chucknorris.io/jokes/random";
+                //ChuckNorrisAPI api;
+                using (var client = new HttpClient())
+                {
+                    //string results = client.GetStringAsync(url).Result;
+
+                    //string quote = JsonConvert.DeserializeObject<ChuckNorrisAPI>(results);
+
+                    string CNQuote = client.GetStringAsync(url).Result;
+
+                    ChuckNorrisAPI quote = JsonConvert.DeserializeObject<ChuckNorrisAPI>(CNQuote);
+
+                    rtbQuote. = $"{quote.value}";
+                }
+            }
 
         }
     }

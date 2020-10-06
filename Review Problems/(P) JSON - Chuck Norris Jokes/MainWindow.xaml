@@ -12,6 +12,13 @@
         </Grid.Background>
         <ComboBox x:Name="cboCategory" HorizontalAlignment="Left" Height="31" Margin="26,10,0,0" VerticalAlignment="Top" Width="149"/>
         <Button x:Name="btnGetQuote" Content="Get Quote" HorizontalAlignment="Left" Height="31" Margin="180,10,0,0" VerticalAlignment="Top" Width="124" Click="btnGetQuote_Click"/>
+        <RichTextBox x:Name="rtbQuote" HorizontalAlignment="Left" Height="177" Margin="526,10,0,0" VerticalAlignment="Top" Width="258">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
 
     </Grid>
 </Window>

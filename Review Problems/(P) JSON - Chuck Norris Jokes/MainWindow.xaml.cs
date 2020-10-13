@@ -73,7 +73,7 @@ namespace _P__JSON___Chuck_Norris_Jokes
 
                     ChuckNorrisAPI quote = JsonConvert.DeserializeObject<ChuckNorrisAPI>(CNQuote);
 
-                    rtbQuote. = $"{quote.value}";
+                    //rtbQuote. == $"{quote.value}";
                 }
             }
 

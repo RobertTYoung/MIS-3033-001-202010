@@ -29,6 +29,9 @@ namespace _P__MVC___Beginner.Controllers
 
         public ActionResult Info(string id)
         {
+            PokemonInfo info;
+
+
             return View();
         }
 

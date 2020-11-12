@@ -28,7 +28,7 @@ namespace _P__MVC___Beginner.Controllers
 
             }
 
-            return View();
+            return View(joke);
         }
     }
 }

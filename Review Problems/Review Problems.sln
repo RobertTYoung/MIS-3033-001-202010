@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "(P) JSON - Chuck Norris Jok
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "(P) Classes 3", "(P) Classes 3\(P) Classes 3.csproj", "{5B41E418-5FF7-4342-ADBF-E9C58C89A64A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "(P) MVC - Beginner", "(P) MVC - Beginner\(P) MVC - Beginner.csproj", "{BB43B070-AE8D-4B25-BE48-CB9C45F41ABE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{5B41E418-5FF7-4342-ADBF-E9C58C89A64A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B41E418-5FF7-4342-ADBF-E9C58C89A64A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B41E418-5FF7-4342-ADBF-E9C58C89A64A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB43B070-AE8D-4B25-BE48-CB9C45F41ABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB43B070-AE8D-4B25-BE48-CB9C45F41ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB43B070-AE8D-4B25-BE48-CB9C45F41ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB43B070-AE8D-4B25-BE48-CB9C45F41ABE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

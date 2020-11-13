@@ -14,9 +14,9 @@ namespace _P__MVC___Beginner.Models
         public string name { get; set; }
         public string url { get; set; }
 
-        public override string ToString()
-        {
-            return name[0].ToString().ToUpper() + name.Substring(1, name.Length - 1);
-        }
+        //public override string ToString()
+        //{
+        //    return name[0].ToString().ToUpper() + name.Substring(1, name.Length - 1);
+        //}
     }
 }

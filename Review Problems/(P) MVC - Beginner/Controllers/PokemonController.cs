@@ -31,8 +31,14 @@ namespace _P__MVC___Beginner.Controllers
         {
             PokemonInfo info;
 
+            using (var client = new HttpClient())
+            {
+                var json = client.GetStringAsync($"http://pokeapi.co/api/v2/pokemon/{id}").Result;
 
-            return View();
+                info = JsonConvert.DeserializeObject<PokemonInfo>(json);
+            }
+
+            return View(info);
         }
 
     }

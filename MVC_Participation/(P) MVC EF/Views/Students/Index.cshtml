@@ -7,35 +7,38 @@
 <h2>Index</h2>
 
 
+<div class="container">
+    <div class="row row-cols-3">
+        @foreach (var item in Model)
+        {
+            @*<tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FirstName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LastName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FavoriteColor)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Details", "Details", new { id = item.StudentID }) |
+                    </td>
+                </tr>*@
 
-    @foreach (var item in Model)
-    {
-        @*<tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.LastName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FavoriteColor)
-            </td>
-            <td>
-                @Html.ActionLink("Details", "Details", new { id = item.StudentID }) |
-            </td>
-        </tr>*@
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    @item.FirstName
+                    @item.LastName
+                    @item.FavoriteColor
+                    @item.StudentID
 
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                @item.FirstName
-                @item.LastName
-                @item.FavoriteColor
-                @item.StudentID
-                
-                    
+
+                </div>
             </div>
+        }
         </div>
-    }
+    </div>
 
 
